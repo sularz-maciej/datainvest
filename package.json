@@ -1,0 +1,38 @@
+{
+  "name": "datainvest",
+  "version": "1.0.0",
+  "description": "datainvest.pl rewritten in react. This is a showcase project only.",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sularz-maciej/datainvest.git"
+  },
+  "author": "Maciej Sularz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sularz-maciej/datainvest/issues"
+  },
+  "homepage": "https://github.com/sularz-maciej/datainvest#readme",
+  "devDependencies": {
+    "eslint": "^3.8.1",
+    "eslint-config-standard": "^6.2.0",
+    "eslint-plugin-promise": "^3.3.0",
+    "eslint-plugin-standard": "^2.0.1"
+  },
+  "dependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-react-html-attrs": "^2.0.0",
+    "babel-plugin-transform-class-properties": "^6.16.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "webpack": "^1.13.2"
+  }
+}
