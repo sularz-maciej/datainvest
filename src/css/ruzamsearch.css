@@ -1,0 +1,29 @@
+#RuzamSearchBundle_simplesearch_form {
+width: 100%;
+height: auto;
+overflow: hidden;
+text-align: right;
+}
+
+.RuzamSearchBundle_simplesearch_form_submit {
+width: 17px;
+height: 18px;
+background-image: url(/bundles/ruzamsearch/images/submit.png);
+margin: 0px;
+padding-top: 1px;
+border: 0px;
+background-position: top;
+background-repeat: no-repeat;
+top: 0px;
+cursor: pointer;
+}
+
+.RuzamSearchBundle_simplesearch_form_text {
+width: 80px;
+height: 15px;
+margin: 0px;
+padding: 0px;
+border: 1px solid gray;
+font-size: 12px;
+top: 0px;
+}

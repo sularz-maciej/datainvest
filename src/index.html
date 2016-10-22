@@ -1,13 +1,445 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>datainvest.pl | react</title>
-    <!-- change this up! http://www.bootstrapcdn.com/bootswatch/ -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/cosmo/bootstrap.min.css" type="text/css" rel="stylesheet"/>
-  </head>
-  <body>
-    <div id="app"></div>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="pl" id="markom_html">
+<head>
+    <title>Data Invest Sp. z o.o. S.K.A.</title>
+    <meta name="keywords" content="data,invest,inwestor,grupa kapitalowa,torun,datacenter, dataspace" />
+    <meta name="description" content="Data Invest jest założoną w 2009 roku firmą inwestycyjną. Poszukujemy okazji inwestycyjnych w sektorach: Internet, Media
+    i rozrywka, Telekomunikacja, Biotechnologia, OZE, Usługi finansowe. Inwestujemy w technologie, ale przede wszystkim w ludzi,
+    którzy za nimi stoją." />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="google-site-verification" content="CMnuB816gNOIQ7K1YzHnLGwh-4srz3sYyD5FP3ymPuk" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/formly.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ruzamcomments.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ruzamarticle.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ruzammenu.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ruzamsettings.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ruzamcms.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ruzamsearch.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/jquery.lightbox-0.5.css" />
+
+    <!-- code -->
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-41462943-2']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+</head>
+<body itemscope itemtype="http://schema.org/WebPage">
+<div id="app"></div><!-- /#app -->
+    <!--header-->
+    <div id="App_header_container">
+        <div id="App_header_content">
+            <div id="App_header_logo"><a href="/" title="Data Invest Sp. z o.o. S.K.A."><img src="images/app_logo_xl.png" alt="Data Invest Sp. z o.o. S.K.A." id="App_site_logo"/></a></div>
+            <div id="App_header_menu">
+                    <ul class="RuzamMenuBundle_Top-Menu">
+                        <li style="position: relative;" class="RuzamMenuBundle_open_menu" id="RuzamMenuBundle_Top-Menu_21">
+                            <a href="/our_company"   style="position: relative;">Our company</a>
+                            <div class="RuzamMenuBundle_hidden_menu" id="RuzamMenuBundle_Top-Menu_21_hidden_menu" style="display: block;">
+                                <ul class="RuzamMenuBundle_nested_items">
+                                    <li>
+                                        <a href="/overview" title="Overview" style="padding-left: 10px !important;">Overview</a>
+                                    </li>
+                                    <li>
+                                        <a href="/offices" title="Offices" style="padding-left: 10px !important;">Offices</a>
+                                    </li>
+                                    <li>
+                                        <a href="/grants" title="Grants" style="padding-left: 10px !important;">Grants</a>
+                                    </li>
+                                    <li>
+                                        <a href="/patents" title="Patents" style="padding-left: 10px !important;">Patents</a>
+                                    </li>
+                                    <li>
+                                        <a href="/csr" title="CSR" style="padding-left: 10px !important;">CSR</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="Top-Menu_separator">&nbsp;</li>
+                        <li style="position: relative;" class="RuzamMenuBundle_open_menu" id="RuzamMenuBundle_Top-Menu_22">
+                            <a href="/our_business"   style="position: relative;">Our business</a>
+                            <div class="RuzamMenuBundle_hidden_menu" id="RuzamMenuBundle_Top-Menu_22_hidden_menu" style="display: block;">
+                                <ul class="RuzamMenuBundle_nested_items">
+                                    <li>
+                                        <a href="/business_overview" title="Overview" style="padding-left: 10px !important;">Overview</a>
+                                    </li>
+                                    <li>
+                                        <a href="/dataspace" title="DataSpace" style="padding-left: 10px !important;">DataSpace</a>
+                                    </li>
+                                    <li>
+                                        <a href="/datalab" title="DataLab" style="padding-left: 10px !important;">DataLab</a>
+                                    </li>
+                                    <li>
+                                        <a href="/dataventures" title="DataVentures" style="padding-left: 10px !important;">DataVentures</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="Top-Menu_separator">&nbsp;</li>
+                        <li style="position: relative;" class="RuzamMenuBundle_open_menu" id="RuzamMenuBundle_Top-Menu_29">
+                            <a href="/careers"   style="position: relative;">Careers</a>
+                            <div class="RuzamMenuBundle_hidden_menu" id="RuzamMenuBundle_Top-Menu_29_hidden_menu" style="display: block;">
+                                <ul class="RuzamMenuBundle_nested_items">
+                                    <li>
+                                        <a href="/careers_overiew" title="Overview" style="padding-left: 10px !important;">Overview</a>
+                                    </li>
+                                    <li>
+                                        <a href="/open_positions" title="Open positions" style="padding-left: 10px !important;">Open positions</a>
+                                    </li>
+                                    <ul class="RuzamMenuBundle_nested_items">
+                                    </ul>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="Top-Menu_separator">&nbsp;</li>
+                        <li><a href="/kontakt"   style="position:relative;">Contact</a></li>
+                        <li class="Top-Menu_separator">&nbsp;</li>
+                        <li style="position: relative;" class="RuzamMenuBundle_open_menu" id="RuzamMenuBundle_Top-Menu_30">
+                            <a href="/news/list/1,newsroom.html"   style="position: relative;">Newsroom</a>
+                            <div class="RuzamMenuBundle_hidden_menu" id="RuzamMenuBundle_Top-Menu_30_hidden_menu" style="display: block;">
+                                <ul class="RuzamMenuBundle_nested_items">
+                                    <li>
+                                        <a href="/news/list/4,news.html" title="News" style="padding-left: 10px !important;">News</a>
+                                    </li>
+                                    <li>
+                                        <a href="/news/list/5,messages.html" title="Messages" style="padding-left: 10px !important;">Messages</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul></div>
+                    <div id="App_locale_switch">
+                        <span >
+                            <a href="/pl/">Polski</a>
+                        </span>
+                        <span class="selected">
+                            <a href="/">English</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!--Flash-->
+            <div id="App_homepage_background_container">
+<!-- Carousel
+================================================== -->
+<div class="slide-top-container">
+    <div id="myCarousel" class="carousel slide" data-interval="5000" data-wrap="true" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+
+            <li data-target="#myCarousel" data-slide-to="1" ></li>
+
+            <li data-target="#myCarousel" data-slide-to="2" ></li>
+
+            <li data-target="#myCarousel" data-slide-to="3" ></li>
+
+            <li data-target="#myCarousel" data-slide-to="4" ></li>
+
+            <li data-target="#myCarousel" data-slide-to="5" ></li>
+        </ol>
+        <div class="carousel-inner">
+
+            <div class="item active" style="background-image: url(uploads/slider/ed24d275928f41d98abfd91e5757853a.jpeg);">
+
+                <div class="container">
+                    <div class="row bottom-caption">
+                        <h1>REINVENTING DATA <br> ANALYTICS TECHNOLOGIES</h1>
+                        <!--h2>Explore our Business</h2-->
+                        <div class="slide-top-spacer"></div>
+                        <p class="text-center"><a class="btn btn-default btn-slide " href="javascript:anchor(&#039;#MenuBlock&#039;)">Explore our Business <span class="cheveron-right-small">&nbsp;</span></a><br /><span class="btn-slide-caption">&nbsp;</span></p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="item " style="background-image: url(uploads/slider/f36f0b2a51ec2e2b6ad7147fe64bf51b.jpeg);">
+
+                <div class="container">
+                    <div class="row bottom-caption">
+                        <h1>Global expierience <br> in DDoS protection</h1>
+                        <!--h2>Go to Anti DDoS</h2-->
+                        <div class="slide-top-spacer"></div>
+                        <p class="text-center"><a class="btn btn-default btn-slide " href="https://dataspace.pl/anty-ddos/">Go to Anti DDoS <span class="cheveron-right-small">&nbsp;</span></a><br /><span class="btn-slide-caption">&nbsp;</span></p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="item " style="background-image: url(uploads/slider/aece7884b08fde9586c9cad3bb96ef8a.jpeg);">
+
+                <div class="container">
+                    <div class="row bottom-caption">
+                        <h1>Big Data <br> for financial markets</h1>
+                        <!--h2>Go to TURBINE</h2-->
+                        <div class="slide-top-spacer"></div>
+                        <p class="text-center"><a class="btn btn-default btn-slide " href="http://turbineanalytics.com/en/">Go to TURBINE <span class="cheveron-right-small">&nbsp;</span></a><br /><span class="btn-slide-caption">&nbsp;</span></p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="item " style="background-image: url(uploads/slider/a646ea1e8866a7779efd90a73e999b1f.jpeg);">
+
+                <div class="container">
+                    <div class="row bottom-caption">
+                        <h1>Source of Bitcoin liquidity <br/> built with a robust technology</h1>
+                        <!--h2>Go to BAZAAR</h2-->
+                        <div class="slide-top-spacer"></div>
+                        <p class="text-center"><a class="btn btn-default btn-slide " href="http://www.bazaarbt.com/">Go to BAZAAR <span class="cheveron-right-small">&nbsp;</span></a><br /><span class="btn-slide-caption">&nbsp;</span></p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="item " style="background-image: url(uploads/slider/d279c4b67bc7b268005c7fbd5e0752db.jpeg);">
+
+                <div class="container">
+                    <div class="row bottom-caption">
+                        <h1>Cutting-edge droneware<br>technologies</h1>
+                        <!--h2>Go to AIRBOT</h2-->
+                        <div class="slide-top-spacer"></div>
+                        <p class="text-center"><a class="btn btn-default btn-slide " href="http://airbot.io/">Go to AIRBOT <span class="cheveron-right-small">&nbsp;</span></a><br /><span class="btn-slide-caption">&nbsp;</span></p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="item " style="background-image: url(uploads/slider/f8cb2ff61df9b82055094d567bc54e15.jpeg);">
+
+                <div class="container">
+                    <div class="row bottom-caption">
+                        <h1>AT THE FOREFRONT <br> OF BIG DATA REVOLUTION</h1>
+                        <!--h2>Go to NUMERIX</h2-->
+                        <div class="slide-top-spacer"></div>
+                        <p class="text-center"><a class="btn btn-default btn-slide " href="http://numerix.pl/">Go to NUMERIX <span class="cheveron-right-small">&nbsp;</span></a><br /><span class="btn-slide-caption">&nbsp;</span></p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev"><img src="images/arrow-left.png" /></a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next"><img src="images/arrow-right.png" /></a>
+    </div><!-- /.carousel -->
+</div><a name="#MenuBlock"></a>
+<div id="App_homepage_title_container">
+    <div id="App_homepage_title_content">
+        <div id="App_homepage_intro_title"><h2>Data Invest is a high-tech company based in Toruń, Poland. We offer cutting edge technologies, including IT Security (DDoS/Application Protection), Big Data and Cloud Solutions.</h2></div>
+    </div>
+</div>
+
+<div id="App_homepage_divisions_containter">
+    <div id="App_homepage_division_background">
+
+    </div>
+    <div id="App_homepage_divisions_content">
+        <ul id="App_homepage_intro_divisions">
+            <li><p><a href="/dataspace" title="Data Space"><img src="images/app_logo_data_space.png" /><br /><br />
+                Sophisticated, top-tier 3000 m Data Center located in Toruń, Poland</a></p>
+            </li>
+            <li><p><a href="/datalab" title="Data Lab"><img src="images/app_logo_data_lab.png" /><br /><br />
+                Place where clever data management ideas are born every day</a></p>
+            </li>
+            <li><p><a href="/dataventures" title="Data Ventures"><img src="images/app_logo_data_ventures.png" /><br /><br />
+                Corporate venture capital fund searching for bright entrepreneurs with revolutionary ideas</a></p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+</div>
+
+<div id="App_homepage_intro_containter">
+    <div id="App_homepage_intro_content">
+        <h3>We believe that data acquisition, processing and management become an ultimate source of competitive advantage. We want to be with you at the forefront of this revolution.</h3>
+        <a href="/overview" id="App_homepage_intro_link">Get to know more about Data Invest &gt;</a>
+    </div>
+</div>
+
+
+
+
+<!--news-->
+<div id="App_homepage_text_container">
+    <div id="App_homepage_text_content">
+        <!--line-->
+        <div id="App_homepage_text_line"></div>
+        <!--50%-->
+        <div id="App_homepage_text_announcements">
+            <h2><a href="/news/list/5,messages.html" title="Messages">Messages</a></h2>
+            <div id="App_homepage_ann_container">
+                <div class="App_homepage_ann_single">
+                    <h2><a href="/news/8,grants" title="Grants">Grants</a></h2>
+                    <p><p>
+                        Auction results for project "The purchase of infrastructure and software suppor the centre for Research and Development in the field of AI".</p>
+                    </p>
+                </div>
+                <div class="App_homepage_ann_single">
+                    <h2><a href="/news/7,auction_results" title="Auction results">Auction results</a></h2>
+                    <p><p>
+                        Auction results for measure 3 for project „The purchase of infrastructure and software suppor the centre for research and development in the field of AI”.</p>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div id="App_homepage_text_news">
+            <h2><a href="/news/list/4,news.html" title="Wyświetl wszystkie wpisy w: News"><h2>News</h2></a></h2>
+            <div id="App_homepage_news_container">
+
+                <div class="App_homepage_news_single">
+                    <h2><a href="/news/15,nadanie_statusu_centrum_badawczo_rozwojowego" title="Research &amp; Development Center Status">Research &amp; Development Center Status</a></h2>
+                    <p><p>
+                        <span id="result_box">We are pleased to inform that company </span>Data Invest Spółka z o.o. s.k.a. has the status of Research and Development center granted by the Polish Minister of Economy on 30th September.</p>
+                    </p>
+                    <span class="App_homepage_news_single_date">08.10.2014</span>
+                </div>
+                <div class="App_homepage_news_single">
+                    <h2><a href="/news/14,iso_certification" title="ISO Certification">ISO Certification</a></h2>
+                    <p><p>
+                        We are pleased to announce that the company Data Invest sp. z o.o. s.k.a. obtained the quality management certificate ISO 9001:2008 in the scope of: elaborating solutions in the field of cloud computing, high accessibility, hpc and innovative it/ict solutions in the area of research and development, prototype projects, industrial research, applied, basic and precompetitive solutions, natural sciences and technology.</p>
+                    </p>
+                    <span class="App_homepage_news_single_date">08.05.2013</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="app_main_center_left">
+    <h1></h1>
+    <!-- news/article entry short -->
+
+</div>
+<div id="app_main_center_right">
+
+
+</div>
+
+
+<!--cookie info -->
+<div id="global-cookie-info">
+    <div id="global-cookie-info-text">
+        This site requires cookies for proper work. By continuing to use this site you are agreeing to our cookies policy. <a href="/cookies_policy" target="_blank"><b>Go to cookies policy</b></a>. <br /><br /><span id="close-cookie-info" style="cursor: pointer; margin: auto;"><b>Close it</b></span>
+    </div>
+</div>
+
+<div id="App_footer_container">
+    <div id="App_footer_content">
+        <div id="App_footer_menu">
+
+
+
+            <ul class="RuzamMenuBundle_footer_menu">
+
+
+
+
+
+                <li><a href="/terms_of_use"   style="position:relative;">Terms of use</a></li>
+
+
+
+
+
+
+
+                <li><a href="/trademark_notice"   style="position:relative;">Trademark notice</a></li>
+
+
+
+
+
+
+
+                <li><a href="/cookies_policy"   style="position:relative;">Cookies policy</a></li>
+
+
+
+
+
+
+
+                <li><a href="/grants"   style="position:relative;">Grants</a></li>
+
+
+            </ul>
+        </div>
+        <div id="App_footer_copyright">
+            &copy; 2015 DataInvest, All Rights Reserved. Made in Poland.
+        </div>
+
+        <ul id="App_footer_social">
+            <li id="App_social_twitter" onclick="window.open('https://twitter.com/DATASPACEPL','_blank')"></li>
+            <li id="App_social_facebook" onclick="window.open('https://www.facebook.com/pages/DATASPACE/456702187756370','_blank')"></li>
+            <li id="App_social_linkedin" onclick="window.open('https://www.linkedin.com/company/data-invest?trk=biz-companies-cym','_blank')"></li>
+        </ul>
+
+    </div>
+
+    <!-- Original Scripts -->
+    <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.lightbox-0.5.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/formly.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript">
+    //<![CDATA[
+
+    var id=0;
+
+    $(document).ready(function(){
+
+        $(".RuzamMenuBundle_hidden_menu").hide();
+
+        $(".RuzamMenuBundle_open_menu").hover(
+            function(){
+                //alert("test");
+                id=$(this).attr('id');
+                //alert(id);
+                $("#"+id+"_hidden_menu").fadeIn();
+            }, function(){
+                $("#"+id+"_hidden_menu").fadeOut();
+            });
+        });
+
+        //]]>
+        </script>
+
+    <!-- Our React App -->
     <script src="client.min.js"></script>
-  </body>
+</div>
+</body>
 </html>

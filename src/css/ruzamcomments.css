@@ -1,0 +1,80 @@
+/* RuzamCommentsBundle */
+
+.ruzamcommentsbundle_input_text {
+background-color: white;
+color: gray;
+width: 150px;
+border: 1px solid lightgray;
+height: 23px;
+padding: 1px;
+margin:0px;
+    
+}
+
+.ruzamcommentsbundle_input_textarea {
+background-color: white;
+color: gray;
+width: 650px;
+border: 1px solid lightgray;
+height: 60px;
+margin-left: auto;
+height: 65px;
+resize: none;
+    
+}
+
+.ruzamcommentsbundle_separator {
+width: 100%;
+background-position: center;
+background-image: url(/bundles/ruzamcomments/images/kreska_podzialu_duza.png);
+height: 4px;
+clear: both;
+}
+
+#ruzamcommentsbundle_title {
+width: 100%;
+background-position: center bottom;
+background-image: url(/bundles/ruzamcomments/images/kreska_podzialu_duza.png);
+height: auto;
+clear: both;
+}
+
+#ruzamcommentsbundle_title h4 {
+padding: 0px;
+margin: 0px;
+font-style: italic;
+float: left;
+font-size: 16px;
+}
+
+.ruzamcommentsbundle_comment_row {
+width: 100%; height: auto; clear: both;
+}
+
+.ruzamcommentsbundle_comment_row_profile {
+border: 1px solid white; float: left; width: 100px; height: 120px;
+}
+.ruzamcommentsbundle_comment_row_message {
+overflow: hidden; height: auto;
+}
+
+#ruzamcommentsbundle_switch_comment_new {
+cursor: pointer;
+float: right;
+    
+}
+
+.ruzamcommentsbundle_input_submit {
+background-image: url(/bundles/ruzamcomments/images/wyslij_button_on.png);   
+width: 82px;
+height: 25px;
+overflow: hidden;
+margin: 0px;
+padding: 0px;
+border: 0px;
+cursor: pointer;
+}
+
+.ruzamcommentsbundle_comment_row_profile_name {
+padding: 3px;
+}

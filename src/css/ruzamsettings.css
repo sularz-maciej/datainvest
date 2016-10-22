@@ -1,0 +1,123 @@
+/* 
+    Document   : style
+    Created on : 2013-01-17, 17:41:19
+    Author     : Krzychu
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+	#RuzamSettingsBundle_content_slider_container {
+	width: 1000px;
+	height: 241px;
+	position: relative;
+	z-index: 1;
+        background-image: url(/bundles/ruzamsettings/images/czysty_slide.png);
+	}
+	
+	#RuzamSettingsBundle_content_slider_switch {
+	width: auto;
+	height: 17px;
+	position: absolute;
+	top: 8px;
+	right: 6px;
+	background-image: url(/bundles/ruzamsettings/images/przelacznik_slideow_off.png);
+	z-index: 2;
+	margin: 0px;
+	padding: 0px;
+	padding-left: 0px;
+        overflow: hidden;
+	}
+	#RuzamSettingsBundle_content_slider_switch li {
+	float: left;
+	width: 17px;
+	height: 16px;
+	margin: 0px;
+	padding: 0px;
+	display: block;
+        cursor: pointer;
+
+	}
+	
+	.RuzamSettingsBundle_content_slider_switch_set_on {
+	background-image: url(/bundles/ruzamsettings/images/przelacznik_slideow_on.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	}
+        .content_slider_switch_set_off {
+        cursor: pointer;    
+        }
+	
+	#RuzamSettingsBundle_content_slider_crossbeam {
+	width: 860px;
+	height: 58px;
+	background-image: url(/bundles/ruzamsettings/images/belka_przewijania_slideow.png);	
+	position: absolute;
+	bottom: -6px;
+	left: 70px;	
+	z-index: 4;
+	}
+	.RuzamSettingsBundle_content_slider_crossbeam_title {
+	width: 860px;
+	height: 58px;
+	position: absolute;
+	bottom: 0px;
+	left: 75px;	
+	z-index: 5;
+	overflow: hidden;
+	}
+	.RuzamSettingsBundle_content_slider_crossbeam_title h1{
+	font-size: 16px;
+	color: white;
+	padding: 20px;
+	margin: 0px;
+	width: 100%;
+        font-weight: normal;
+        text-transform: uppercase;
+	height: 58px;
+        }
+	
+	#RuzamSettingsBundle_content_slider_crossbeam_button_left {
+	position: absolute;
+	width: 70px;
+	height: 58px;
+	bottom: -6px;
+	left: 0px;
+	z-index: 5;
+	}
+	
+	.RuzamSettingsBundle_content_slider_crossbeam_button_left_on {
+	background-image: url(/bundles/ruzamsettings/images/belka_przewijania_slideow_lewy_on.png);
+        cursor: pointer;
+	}
+	.RuzamSettingsBundle_content_slider_crossbeam_button_left_off {
+	background-image: url(/bundles/ruzamsettings/images/belka_przewijania_slideow_lewy_off.png);
+	}
+	
+	#RuzamSettingsBundle_content_slider_crossbeam_button_right {
+	position: absolute;
+	width: 70px;
+	height: 58px;
+	right: 0px;
+	bottom: -6px;
+	z-index: 5;
+	}
+	
+	.RuzamSettingsBundle_content_slider_crossbeam_button_right_on {
+	background-image: url(/bundles/ruzamsettings/images/belka_przewijania_slideow_prawy_on.png);
+        cursor: pointer;
+	}
+	.RuzamSettingsBundle_content_slider_crossbeam_button_right_off {
+	background-image: url(/bundles/ruzamsettings/images/belka_przewijania_slideow_prawy_off.png);
+	}
+	
+	.RuzamSettingsBundle_content_slider_slide {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background-position: center;
+	z-index: 1;
+	width: 1000px;
+	height: 241px;
+        background-repeat: no-repeat;
+	}
+
