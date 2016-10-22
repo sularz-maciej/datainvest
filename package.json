@@ -1,6 +1,6 @@
 {
   "name": "datainvest",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "datainvest.pl rewritten in react. This is a showcase project only.",
   "main": "webpack.config.js",
   "scripts": {
