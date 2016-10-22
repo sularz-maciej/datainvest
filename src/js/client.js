@@ -10,7 +10,7 @@ import ReactDOM from "react-dom";
  * Destructuring Assignment - Matching, Shorthand Notation
  * http://es6-features.org/#ObjectMatchingShorthandNotation
  */
-import { Router, Route, IndexRedirect, IndexRoute, hashHistory } from "react-router"
+import { Router, Route, Redirect, IndexRoute, IndexRedirect, hashHistory } from "react-router"
 
 // Importing App components
 import Layout from "./pages/Layout";
@@ -51,6 +51,7 @@ ReactDOM.render(
         <Route path="/" component={Layout}>
             <IndexRoute component={Index}></IndexRoute>
             {/* Main Menu Routes */}
+            <Redirect from="home" to="/" />
             <Route path="company" component={Company}>
                 <IndexRedirect to='overview' />
                 <Route path="overview" component={CompanyOverview}></Route>

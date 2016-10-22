@@ -65,6 +65,24 @@
         }
 
         /***********************************************************************
+         * Breadcrumbs
+         **********************************************************************/
+         /**
+          * Let's get rid of these ugly span elements containing a backslash
+          * that were used to separate the breadcrumbs!
+          */
+         #ruzam_breadcrumbs > li::before {
+             color: #cacaca;
+             content: '/';
+             padding: 0 5px 0 0;
+         }
+
+         #ruzam_breadcrumbs > li:first-of-type::before {
+             content: none;
+             padding: 0;
+         }
+
+        /***********************************************************************
          * Footer
          **********************************************************************/
          .RuzamMenuBundle_footer_menu li > a {
