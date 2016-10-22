@@ -45,6 +45,27 @@
          * <div style={{ color: '#fff', background-color: '#ddd' }}></div
          */
 
+
+
+         /***********************************************************************
+          * Utils
+          **********************************************************************/
+        .clearfix:after {
+            visibility: hidden;
+            display: block;
+            font-size: 0;
+            content: " ";
+            clear: both;
+            height: 0;
+        }
+        
+        * html .clearfix             { zoom: 1; } /* IE6 */
+        *:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+          .text-center {
+              text-align: center;
+          }
+
         /***********************************************************************
          * Header
          **********************************************************************/
@@ -81,6 +102,20 @@
              content: none;
              padding: 0;
          }
+
+         /***********************************************************************
+         * Sidebar
+         **********************************************************************/
+
+         #App_section_sidebar li > a {
+             padding-left: 20px;
+         }
+
+         .App_section_menu li > a.selected, .App_section_menu li > a:visited {
+            /*padding-top: 18px;*/
+            border-bottom: 5px solid rgb(95,117,163);
+            background: rgb(238,244,255);
+        }
 
         /***********************************************************************
          * Footer
