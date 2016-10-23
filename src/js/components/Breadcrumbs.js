@@ -12,7 +12,7 @@ export default class Breadcrumbs extends React.Component {
      * NOTE:
      * To make the last breadcrumb active simply set an attribute 'enableLastLink'
      * in the Breadcrumbs component like so:
-     * 
+     *
      * <Breadcrumbs path="this/leads/some-where" enableLastLink />
      *
      * IMPORTANT:
@@ -33,14 +33,6 @@ export default class Breadcrumbs extends React.Component {
         let crumbsComponents = [];
         // Stores the url used to navigate to a particular crumb
         let linkUrl;
-
-        /*
-         * Adds the very first breadcrumb that points to the homepage
-         * IMPORTANT:
-         * There must be a redirection set up in the Routes in order
-         * for it to work!
-         */
-        crumbs.unshift('home');
 
         /*
          * I decided to use a for loop to itterate through each breadcrumb. It
@@ -75,6 +67,14 @@ export default class Breadcrumbs extends React.Component {
                 crumbsComponents.push(<li key={ key }><Link to={ linkUrl }>{ linkName }</Link></li>);
             }
         }
+
+        /*
+         * Adds the very first breadcrumb that points to the homepage
+         * IMPORTANT:
+         * There must be a redirection set up in the Routes in order
+         * for it to work!
+         */
+        crumbsComponents.unshift(<li key={"home"+Date.now()}><Link to="home">Home</Link></li>);
 
         /*
          * Return an array of React components. This way we can simply just
