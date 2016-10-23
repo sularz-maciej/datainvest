@@ -9,17 +9,29 @@ export default class Sidebar extends React.Component {
         let menuItems = [];
 
         if(items){
+            // Itterate through all menu items
             items.map(
+                /**
+                 * Arrow function that builds a React list item and pushes it to
+                 * the menuItems array that is returned when the map() function
+                 * is done.
+                 */
                 (item) => {
                     let key = item.name + "-" + Date.now();
-                    menuItems.push(<li key={key}><Link to={item.url} activeClassName="selected">{item.name}</Link></li>)
+                    menuItems.push(
+                        <li key={key}><Link to={item.url} activeClassName="selected">{item.name}</Link></li>
+                    )
                 }
             )
 
+            /*
+             * Returns an array of React list items, react is smart like that :D
+             */
             return menuItems;
         }
 
-
+        // Should menu items not be passed to the component.
+        return;
     }
 
 	render(){
