@@ -1,6 +1,6 @@
 import React from "react";
 
-import SectionSidebar from "../components/SectionSidebar";
+import Sidebar from "../components/Sidebar";
 
 // by exporting this class we can require it in client.js
 // https://developer.mozilla.org/en/docs/web/javascript/reference/statements/export#Using_the_default_export
@@ -30,7 +30,7 @@ export default class Company extends React.Component {
                         <div id="App_section_text">
                             { this.props.children }
                         </div>
-                        <SectionSidebar menuItems={ this.state.sidebarMenu } />
+                        <Sidebar menuItems={ this.state.sidebarMenu } />
                     </div>
                 </div>
 		);

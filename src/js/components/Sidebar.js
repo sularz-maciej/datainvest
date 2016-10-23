@@ -3,7 +3,7 @@ import { Link } from "react-router";
 
 // by exporting this class we can require it in client.js
 // https://developer.mozilla.org/en/docs/web/javascript/reference/statements/export#Using_the_default_export
-export default class SectionSidebar extends React.Component {
+export default class Sidebar extends React.Component {
     displaySidebar(){
         let items = this.props.menuItems;
         let menuItems = [];
