@@ -1,57 +1,39 @@
 import React from "react";
 
-// Lets make our life easy searching for the particular object in an array, shall we? :D
+// Lets make our life easy searching for the particular object in a collection, shall we? :D
 import { find } from "lodash";
 
 /**
  * This fakes the backend!!!
- * Attach a backend to fetch this kind of data!
- */
+ * Attach a backend to fetch this kind of data! */
 import { news, messages } from "../../backendAPI/server-data";
 
 // by exporting this class we can require it in client.js
 // https://developer.mozilla.org/en/docs/web/javascript/reference/statements/export#Using_the_default_export
 export default class Details extends React.Component {
-    componentWillMount(){
-        /*
-         * componentWillMount() is invoked immediately before mounting occurs.
-         * It is called before render(), therefore setting state in this method
-         * will not trigger a re-rendering. Avoid introducing any side-effects or
-         * subscriptions in this method.
-         *
-         * This is the only lifecycle hook called on server rendering. Generally,
-         * we recommend using the constructor() instead.
-         *
-         * Source:
-         * https://facebook.github.io/react/docs/react-component.html#componentwillmount
-         */
-
-         /**
-          * This is only for the sake of the simplicity. It would have to be
-          * handled diferentely in case of AJAX! The component would not re-render
-          * if the data was fetched via AJAX
-          */
-
-         this.state = this.getEntryDetails();
-    }
-
-    getEntryDetails(){
+    /**
+     * In order to gain access to the props we need to pass them to the constructor and the super method
+     */
+    constructor(props){
+        super(props);
         /**
-         * Hit the API here and fetch the details with AJAX we will fake it ;-)
+         * I'm assignig slug like that to utilize ES6 Parameter Context Matching
+         * likewise entry later on!
          */
+        let entry, slug = props.params.slug;
 
-         let urlParams = this.props.params;
-
-         switch(urlParams.type){
-             case "messages":
-                return find(messages, { slug: urlParams.slug });
+        /**
+         * Loads the right collection depending on url param :slug
+         */
+        switch(props.params.type){
+            case "messages":
+                entry = find(messages, { slug });
                 break;
-             default:
-                return find(news, { slug: urlParams.slug });
-         }
+            default:
+                entry = find(news, { slug });
+        }
 
-         // Should things go worng returns an empty object.
-         return {};
+        this.state = { entry }
     }
 
     /**
@@ -66,9 +48,9 @@ export default class Details extends React.Component {
                 <h1 class="App_section_text_title">
                     { this.state.title }
                 </h1>
-                <div class="app_main_center_page_date">{ this.state.datePosted }</div>
+                <div class="app_main_center_page_date">{ this.state.entry.datePosted }</div>
                 { /* READ THE NOTE ABOVE!!! */ }
-                <div  dangerouslySetInnerHTML={{__html: this.state.content }}></div>
+                <div  dangerouslySetInnerHTML={{__html: this.state.entry.content }}></div>
             </div>
 		);
 	}
