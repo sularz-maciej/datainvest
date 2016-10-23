@@ -37,8 +37,8 @@ import CareersOpenPositions from "./pages/careers/OpenPositions";
 import Contact from "./pages/Contact";
 
 import Newsroom from "./pages/Newsroom";
-import NewsroomNews from "./pages/newsroom/News";
-import NewsroomMessages from "./pages/newsroom/Messages";
+import NewsroomList from "./pages/newsroom/List";
+import NewsroomDetails from "./pages/newsroom/Details";
 
 import Legal from "./pages/Legal";
 import TermsOfUse from "./pages/legal/Terms";
@@ -77,8 +77,8 @@ ReactDOM.render(
             <Route path="contact" component={Contact}></Route>
             <Route path="newsroom" component={Newsroom}>
                 <IndexRedirect to='news' />
-                <Route path="news" component={NewsroomNews}></Route>
-                <Route path="messages" component={NewsroomMessages}></Route>
+                <Route path=":type" component={NewsroomList}></Route>
+                <Route path=":type/:slug" component={NewsroomDetails}></Route>
             </Route>
             {/* Footer Menu Routes */}
             <Route path="legal" component={Legal}>
