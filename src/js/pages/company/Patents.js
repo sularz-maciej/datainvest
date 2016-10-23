@@ -3,6 +3,11 @@ import React from "react";
 // by exporting this class we can require it in client.js
 // https://developer.mozilla.org/en/docs/web/javascript/reference/statements/export#Using_the_default_export
 export default class Patents extends React.Component {
+    /**
+     * TODO: Convert this into individual components, each patent would be a
+     *       self contained unit with a modal window inside it that reaveals
+     *       on click. DO it the React way! ;-)
+     */
 	render(){
 		return(
 			<div class="component-page-company-patents">
@@ -282,7 +287,6 @@ export default class Patents extends React.Component {
                         </li>
                 	</ul>
                 </div>
-                <p>&nbsp;</p>
     		</div>
 		);
 	}
