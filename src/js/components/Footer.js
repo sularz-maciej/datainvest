@@ -10,9 +10,9 @@ export default class Footer extends React.Component {
                 <div id="App_footer_content">
                     <div id="App_footer_menu">
                         <ul class="RuzamMenuBundle_footer_menu">
-                            <li><Link to="terms-of-use">Terms of use</Link></li>
-                            <li><Link to="trademark-notice">Trademark notice</Link></li>
-                            <li><Link to="cookies-policy">Cookies policy</Link></li>
+                            <li><Link to="legal/terms-of-use">Terms of use</Link></li>
+                            <li><Link to="legal/trademark-notice">Trademark notice</Link></li>
+                            <li><Link to="legal/cookies-policy">Cookies policy</Link></li>
                             <li><Link to="company/grants">Grants</Link></li>
                         </ul>
                     </div>

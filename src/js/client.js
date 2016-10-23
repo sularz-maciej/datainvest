@@ -40,15 +40,17 @@ import Newsroom from "./pages/Newsroom";
 import NewsroomNews from "./pages/newsroom/News";
 import NewsroomMessages from "./pages/newsroom/Messages";
 
-import TermsOfUse from "./pages/TermsOfUse";
-import TrademarkNotice from "./pages/TrademarkNotice";
-import CookiesPolicy from "./pages/CookiesPolicy";
+import Legal from "./pages/Legal";
+import TermsOfUse from "./pages/legal/Terms";
+import TrademarkNotice from "./pages/legal/Trademark";
+import CookiesPolicy from "./pages/legal/Cookies";
 
 // Instantiating the App
 const app = document.getElementById('app');
 ReactDOM.render(
     <Router history={hashHistory}>
         <Route path="/" component={Layout}>
+            <IndexRedirect to='en' />
             <IndexRoute component={Index}></IndexRoute>
             {/* Main Menu Routes */}
             <Redirect from="home" to="/" />
@@ -79,9 +81,12 @@ ReactDOM.render(
                 <Route path="messages" component={NewsroomMessages}></Route>
             </Route>
             {/* Footer Menu Routes */}
-            <Route path="terms-of-use" component={TermsOfUse}></Route>
-            <Route path="trademark-notice" component={TrademarkNotice}></Route>
-            <Route path="cookies-policy" component={CookiesPolicy}></Route>
+            <Route path="legal" component={Legal}>
+                <IndexRedirect to='terms' />
+                <Route path="terms-of-use" component={TermsOfUse}></Route>
+                <Route path="trademark-notice" component={TrademarkNotice}></Route>
+                <Route path="cookies-policy" component={CookiesPolicy}></Route>
+            </Route>
         </Route>
     </Router>,
 app);
