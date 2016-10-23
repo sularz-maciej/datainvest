@@ -9,6 +9,12 @@ export default class Breadcrumbs extends React.Component {
     /*
      * Dynamically creates breadcrumbs based on 'this.props.location.pathname'
      *
+     * NOTE:
+     * To make the last breadcrumb active simply set an attribute 'enableLastLink'
+     * in the Breadcrumbs component like so:
+     * 
+     * <Breadcrumbs path="this/leads/some-where" enableLastLink />
+     *
      * IMPORTANT:
      * Currently only supports the pretty links to separate the words by a dash
      * character '-'. Will not work with underscores nor any other separator!
@@ -19,10 +25,14 @@ export default class Breadcrumbs extends React.Component {
     getArrayOfCrumbLinks(){
         // Storres current path passed down via attribute
         let path = this.props.path;
+        // Allows to enable/disable the last breadcrumb
+        let enableLastLink = this.props.enableLastLink | false;
         // Converts the path into an array and removes empty elements
         let crumbs = compact( split( path, '/' ) );
         // Used to return an array of react components
         let crumbsComponents = [];
+        // Stores the url used to navigate to a particular crumb
+        let linkUrl;
 
         /*
          * Adds the very first breadcrumb that points to the homepage
@@ -41,8 +51,6 @@ export default class Breadcrumbs extends React.Component {
         for(let i = 0; i < crumbs.length; i++){
             // Used in the for loop to assign currently itterated element
             let currentCrumb = crumbs[i];
-            // Stores the url used to navigate to a particular crumb
-            let linkUrl;
             // Stores the name of the a element
             let linkName = capitalize(currentCrumb);
             // Stores a unique key for the crumbComponent
@@ -61,7 +69,7 @@ export default class Breadcrumbs extends React.Component {
              * When we reach the very last crumb we don't set it as a link,
              * just print it's name instead.
              */
-            if(i == crumbs.length - 1){
+            if(i == crumbs.length - 1 && !enableLastLink){
                 crumbsComponents.push(<li key={ key }>{ linkName }</li>);
             }else{
                 crumbsComponents.push(<li key={ key }><Link to={ linkUrl }>{ linkName }</Link></li>);
