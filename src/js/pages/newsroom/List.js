@@ -1,5 +1,7 @@
 import React from "react";
 
+import { capitalize } from "lodash";
+
 import Featurette from "./components/Featurette";
 
 /**
@@ -32,7 +34,7 @@ export default class List extends React.Component {
 	render(){
 		return(
 			<div class="component-page-newsroom-news">
-                <h1 class="App_section_text_title">News</h1>
+                <h1 class="App_section_text_title">{ capitalize( this.props.params.type ) }</h1>
                 { this.getEntries().map((entry) => {
                     let key = entry.id + "-" + Date.now();
 
