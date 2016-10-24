@@ -7,7 +7,97 @@
  *       Even something like WordPress could be utilized - use it's AJAX framewok
  */
 
-//
+export var featured = {
+    messages: [
+        {
+            title: "Grants",
+            content: `Auction results for project "The purchase of infrastructure and software suppor the centre for Research and Development in the field of AI".`,
+            datePosted: "18.09.2012",
+            path: "newsroom/messages/grants"
+        },
+        {
+            title: "Auction results",
+            content: `Auction results for measure 3 for project „The purchase of infrastructure and software suppor the centre for research and development in the field of AI”.`,
+            datePosted: "18.04.2012",
+            path: "newsroom/messages/auction-results-2"
+        },
+        {
+            title: "Tenders submitted in the tender",
+            content: `Information about tenders submitted for measure 3 for project "The purchase of infrastructure and software suppor the centre for research and development in the field of AI".`,
+            datePosted: "13.01.2012",
+            path: "newsroom/messages/tenders-submitted-in-the-tender"
+        },
+        {
+            title: "Auction results",
+            content: `Auctions results for measure 1 for project „The purchase of infrastructure and software suppor the centre for research and development in the field of AI”.`,
+            datePosted: "18.05.2011",
+            path: "newsroom/messages/auction-results"
+        },
+        {
+            title: "Grants for innovaction",
+            content: `We would like to inform that the project is implemented under the measure 4.5.2.`,
+            datePosted: "19.11.2010",
+            path: "newsroom/messages/grants-for-innovaction"
+        }
+    ],
+    news: [
+        {
+            title: "Data Invest is a patronage of Aulery Awards",
+            content: `29 th of April 2010 in Warsaw, the Aula Polska given the Aulery Awards to young technology project. The event’s patronage take over the Data Invest Fund and Windows Live Hotmail (Microsoft). The New Connect, exchange market, was the host of this event.`,
+            datePosted: "08.06.2010",
+            path: "newsroom/news/data-invest-is-a-patronage-of-aulery-awards"
+        },
+        {
+            title: "New headquarters",
+            content: `The company is currently finalizing the construction of a representative office building with an irregular structure (the project based on a system of circles). Located close to highway.`,
+            datePosted: "05.10.2012",
+            path: "newsroom/news/new-headquarters"
+        },
+        {
+            title: "UniCo starts selling their product Moliber.com",
+            content: `Since October launched a campaign to promote the system Molber.com – the project prepared by UniCo Sp. z o.o. under the Innovative Economy Operational Programme. Today the target group are a small library. In a few months we will present the product for medium and large libraries.`,
+            datePosted: "11.10.2012",
+            path: "newsroom/news/unico-starts-selling-their-product-moliber-com"
+        },
+        {
+            title: "Data Invest – partner of RIPE NCC",
+            content: `Data Invest acquired the status of LIR (Local Internet Registry) which is assigned by the RIPE NCC organization, whereby it can administer and management ipv4 and ipv6 address also it may provide services to other entities as a sponsor of the LIR interested in obtaining them own ip addressing. We would like to cooperate with local companies from Torun and the surrounding area.`,
+            datePosted: "24.10.2012",
+            path: "newsroom/news/data-invest–partner-of-ripe-ncc"
+        },
+        {
+            title: "Data Center in Torun",
+            content: `Construction of data center has entered in the final stage of work. Installation of specialized technical systems, fire protection and it infrastructure has been completed.`,
+            datePosted: "04.12.2012",
+            path: "newsroom/news/data-center-in-torun"
+        },
+        {
+            title: "The new brand of mobile phone",
+            content: `Kom-net a member of the data invest group introduced on the polish market a phone aQooQoo. The trademark aQooQoo was created for the devices and software, that allow to educate children and safely bring them into the world of high technology.`,
+            datePosted: "10.12.2012",
+            path: "newsroom/news/the-new-brand-of-mobile-phone"
+        },
+        {
+            title: "aQooQoo available in stores Media Markt and Saturn",
+            content: `We are gladly to inform that the phone aQooQoo (product of Kom-net company-a member of our group) is now available in stores Media Markt and Saturn.`,
+            datePosted: "25.02.2013",
+            path: "newsroom/news/aqooqoo-available-in-stores-media-markt-and-saturn"
+        },
+        {
+            title: "ISO Certification",
+            content: `We are pleased to announce that the company Data Invest sp. z o.o. s.k.a. obtained the quality management certificate ISO 9001:2008 in the scope of: elaborating solutions in the field of cloud computing, high accessibility, hpc and innovative it/ict solutions in the area of research and development, prototype projects, industrial research, applied, basic and precompetitive solutions, natural sciences and technology.`,
+            datePosted: "08.05.2013",
+            path: "newsroom/news/iso-certification"
+        },
+        {
+            title: "Research & Development Center Status",
+            content: `We are pleased to inform that company Data Invest Spółka z o.o. s.k.a. has the status of Research and Development center granted by the Polish Minister of Economy on 30th September.`,
+            datePosted: "08.10.2014",
+            path: "newsroom/news/research-and-development-center-status"
+        },
+    ]
+}
+
 export var news = [
      {
          id: 9,
@@ -602,16 +692,4 @@ export var news = [
          path: "newsroom/messages/grants-for-innovaction",
          thumbnail: ""
      }
- ];
-
- export var pages = [
-     {
-         pages: "yay!"
-     }
- ];
-
- export var grants = [
-     {
-         grants: "yay!"
-     }
- ];
+ ]
