@@ -5,6 +5,7 @@ import CookieConsent from "./index/CookieConsent";
 import Divisions from "./index/Divisions";
 import Featured from "./index/Featured";
 import Intro from "./index/Intro";
+import IntroTitle from "./index/IntroTitle";
 import Slider from "./index/Slider";
 
 // by exporting this class we can require it in client.js
@@ -18,17 +19,7 @@ export default class Index extends React.Component {
                         <Slider />
                     </div>
                     <a name="#MenuBlock"></a>
-                    <div id="App_homepage_title_container">
-                        <div id="App_homepage_title_content">
-                            <div id="App_homepage_intro_title">
-                                <h2>Data Invest is a high-tech company based in Toruń,
-                                    Poland. We offer cutting edge technologies,
-                                    including IT Security (DDoS/Application Protection),
-                                    Big Data and Cloud Solutions.
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
+                    <IntroTitle />
                     <Divisions />
                 </div>
                 <Intro />
