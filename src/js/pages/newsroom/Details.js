@@ -46,7 +46,7 @@ export default class Details extends React.Component {
 		return(
 			<div class="component-page-newsroom-details">
                 <h1 class="App_section_text_title">
-                    { this.state.title }
+                    { this.state.entry.title }
                 </h1>
                 <div class="app_main_center_page_date">{ this.state.entry.datePosted }</div>
                 { /* READ THE NOTE ABOVE!!! */ }
