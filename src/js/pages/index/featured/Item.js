@@ -3,7 +3,7 @@ import { Link } from "react-router";
 
 // by exporting this class we can require it in client.js
 // https://developer.mozilla.org/en/docs/web/javascript/reference/statements/export#Using_the_default_export
-export default class Featured extends React.Component {
+export default class Item extends React.Component {
 	render(){
 		return(
             <div class="App_homepage_news_single">
