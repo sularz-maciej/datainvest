@@ -3,6 +3,11 @@ import { Link } from "react-router";
 
 import LocaleSwitch from "./header/LocaleSwitch";
 
+/**
+ * TODO: Extract the menu into a component and make it generate itself, but first
+ *       implement a better menu ;-) Perhaps bootstrap can come in handy?
+ */
+
 // by exporting this class we can require it in client.js
 // https://developer.mozilla.org/en/docs/web/javascript/reference/statements/export#Using_the_default_export
 export default class Header extends React.Component {
