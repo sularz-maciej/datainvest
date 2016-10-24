@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router";
 
+import Featured from "./index/Featured";
+
 // by exporting this class we can require it in client.js
 // https://developer.mozilla.org/en/docs/web/javascript/reference/statements/export#Using_the_default_export
 export default class Index extends React.Component {
@@ -186,95 +188,19 @@ export default class Index extends React.Component {
         </Link>
     </div>
 </div>
-<div id="App_homepage_text_container">
-    <div id="App_homepage_text_content">
-        <div id="App_homepage_text_line"></div>
-        <div id="App_homepage_text_announcements">
-            <h2>
-                <Link to="newsroom/messages">
-                    Messages
-                </Link>
-            </h2>
-            <div id="App_homepage_ann_container">
-                <div class="App_homepage_ann_single">
-                    <h2>
-                        <a href="/news/8,grants" title="Grants">Grants</a>
-                    </h2>
-                    <p>
-                        Auction results for project "The purchase
-                        of infrastructure and software suppor the
-                        centre for Research and Development in
-                        the field of AI".
-                    </p>
-                </div>
-                <div class="App_homepage_ann_single">
-                    <h2>
-                        <a href="/news/7,auction_results" title="Auction results">Auction results</a>
-                    </h2>
-                    <p>
-                        Auction results for measure 3 for project
-                        „The purchase of infrastructure and software
-                        suppor the centre for research and development
-                        in the field of AI”.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div id="App_homepage_text_news">
-            <h2>
-                <Link to="newsroom/news">
-                    News
-                </Link>
-            </h2>
-            <div id="App_homepage_news_container">
-                <div class="App_homepage_news_single">
-                    <h2>
-                        <a href="/news/15,nadanie_statusu_centrum_badawczo_rozwojowego"
-                            title="Research &amp; Development Center Status">
-                            Research &amp; Development Center Status
-                        </a>
-                    </h2>
-                    <p>
-                        <span id="result_box">We are pleased to inform that
-                            company </span>Data Invest Spółka z o.o. s.k.a. has
-                            the status of Research and Development center granted
-                            by the Polish Minister of Economy on 30th September.
-                        </p>
-                        <span class="App_homepage_news_single_date">08.10.2014</span>
-                    </div>
-                    <div class="App_homepage_news_single">
-                        <h2>
-                            <a href="/news/14,iso_certification" title="ISO Certification">ISO Certification</a>
-                        </h2>
-                        <p>
-                            We are pleased to announce that the company Data
-                            Invest sp. z o.o. s.k.a. obtained the quality
-                            management certificate ISO 9001:2008 in the
-                            scope of: elaborating solutions in the field
-                            of cloud computing, high accessibility, hpc
-                            and innovative it/ict solutions in the area
-                            of research and development, prototype projects,
-                            industrial research, applied, basic and precompetitive
-                            solutions, natural sciences and technology.
-                        </p>
-                        <span class="App_homepage_news_single_date">08.05.2013</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+<Featured />
+<div id="global-cookie-info">
+    <div id="global-cookie-info-text">
+        This site requires cookies for proper work. By continuing
+        to use this site you are agreeing to our cookies policy.
+        <a href="/cookies_policy" target="_blank">
+            <b>Go to cookies policy</b>
+        </a>.<br /><br />
+        <span id="close-cookie-info" style={{ cursor: 'pointer', margin: 'auto' }}>
+            <b>Close it</b>
+        </span>
     </div>
-    <div id="global-cookie-info">
-        <div id="global-cookie-info-text">
-            This site requires cookies for proper work. By continuing
-            to use this site you are agreeing to our cookies policy.
-            <a href="/cookies_policy" target="_blank">
-                <b>Go to cookies policy</b>
-            </a>.<br /><br />
-            <span id="close-cookie-info" style={{ cursor: 'pointer', margin: 'auto' }}>
-                <b>Close it</b>
-            </span>
-        </div>
-    </div>
+</div>
 </div>
 		);
 	}
