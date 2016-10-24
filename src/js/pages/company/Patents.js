@@ -6,7 +6,13 @@ export default class Patents extends React.Component {
     /**
      * TODO: Convert this into individual components, each patent would be a
      *       self contained unit with a modal window inside it that reaveals
-     *       on click. DO it the React way! ;-)
+     *       on click. DO it the React way! ;-) Or perhaps create a separate
+     *       rout and view for it. Examples of possible path structure:
+     *
+     *       http://datainvest.pl/#/company/patents/:slug
+     *       http://datainvest.pl/#/company/patents/:slug/details
+     *
+             Easy enough, innit!?
      */
 	render(){
 		return(
