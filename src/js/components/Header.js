@@ -1,17 +1,12 @@
 import React from "react";
 import { Link } from "react-router";
 
+import LocaleSwitch from "./header/LocaleSwitch";
+
 // by exporting this class we can require it in client.js
 // https://developer.mozilla.org/en/docs/web/javascript/reference/statements/export#Using_the_default_export
 export default class Header extends React.Component {
-    handleLanguageChange(locale, event){
-        /**
-         * TODO: Implement this at some point?
-         */
-        console.log("Yay! Current locale: " + locale);
-    }
-
-	render(){
+    render(){
 		return(
             <div id="App_header_container" class="component-header">
                 <div id="App_header_content">
@@ -98,14 +93,7 @@ export default class Header extends React.Component {
                             </li>
                         </ul>
                     </div>
-                    <div id="App_locale_switch">
-                        <span>
-                            <a href="#" onClick={ () => this.handleLanguageChange('pl-PL') }>Polski</a>
-                        </span>
-                        <span class="selected">
-                            <a href="#" onClick={ () => this.handleLanguageChange('en-EN') }>English</a>
-                        </span>
-                    </div>
+                    <LocaleSwitch />
                 </div>
             </div>
 		);
