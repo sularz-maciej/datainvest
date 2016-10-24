@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router";
 
 import Featured from "./index/Featured";
+import Divisions from "./index/Divisions";
 import Intro from "./index/Intro";
 import CookieConsent from "./index/CookieConsent";
 
@@ -145,37 +146,7 @@ export default class Index extends React.Component {
         </div>
     </div>
 </div>
-<div id="App_homepage_divisions_containter">
-    <div id="App_homepage_division_background"></div>
-    <div id="App_homepage_divisions_content">
-        <ul id="App_homepage_intro_divisions">
-            <li>
-                <p>
-                    <Link to="business/dataspace">
-                        <img src="images/app_logo_data_space.png" /><br /><br />
-                        Sophisticated, top-tier 3000 m Data Center located in Toruń, Poland
-                    </Link>
-                </p>
-            </li>
-            <li>
-                <p>
-                    <Link to="business/datalab">
-                        <img src="images/app_logo_data_lab.png" /><br /><br />
-                        Place where clever data management ideas are born every day
-                    </Link>
-                </p>
-            </li>
-            <li>
-                <p>
-                    <Link to="business/dataventures">
-                        <img src="images/app_logo_data_ventures.png" /><br /><br />
-                        Corporate venture capital fund searching for bright entrepreneurs with revolutionary ideas
-                    </Link>
-                </p>
-            </li>
-        </ul>
-    </div>
-</div>
+    <Divisions />
 </div>
 <Intro />
 <Featured />
