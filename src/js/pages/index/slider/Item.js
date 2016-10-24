@@ -9,6 +9,11 @@ export default class Item extends React.Component {
             backgroundImage: 'url(' + this.props.imagePath + ')'
         }
 
+        /**
+         * TODO: Encapsulate the #MenuBlock inside the Slider container so that
+         *       it becomes a self contained component. Do not forget that it
+         *       relies on external jQuery plugin so consider that as well.
+         */
         let itemClass = this.props.active ? 'item active' : 'item'
         let buttonLink = this.props.button.link ? this.props.button.link : "javascript:anchor('#MenuBlock')";
 
