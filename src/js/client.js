@@ -1,18 +1,27 @@
 /**
  * NOTE: In this project I am using ES6 features that are transpiled down by
- *       babel.
+ *       babel. More info refer to the website:
+ *       http://es6-features.org
  *
- * TODO: 1. Modularize the site - especially the pages and extract the content
- *          from the components.
+ * TODO: 1. Modularize the site:
+ *              * especially the pages.
+ *              * extract the content from the components - necessary for translation.
+ *              * check scripts.js and enclose possible jQery scripts within.
+ *                the component it relates to.
  *       2. DRY up the cpde a bit - come up helpers/utilities classes and
  *          exctract code duplication. It's not too bad though!
- *       3. Attach to a backend.
+ *       3. Implement translation capabilities.
+ *       4. Attach to a backend.
+ *       5. Consider the use of Flux or Redux (in case of bigger apps) to handle
+ *          data.
  *
  * DISCLAIMER: This project is for practice purposes only. I am not affiliated
  *             with the Data Invest Sp. z o.o. S.K.A. in any way, shape or form.
  *
  *             Likewise this is my first ever React.js app and some approaches
  *             might not be optimal.
+ *
+ *                                                            Maciej Sularz
  */
 
 /**
