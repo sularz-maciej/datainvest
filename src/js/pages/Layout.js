@@ -17,7 +17,7 @@ export default class Layout extends React.Component {
         let excludeBreadcrumbsFromPaths = ['/'];
 
         if(!includes(excludeBreadcrumbsFromPaths, this.props.location.pathname)){
-            return <Breadcrumbs path={this.props.location.pathname} enableLastLink />;
+            return <Breadcrumbs path={this.props.location.pathname} />;
         }
 
         return;
