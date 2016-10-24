@@ -7,6 +7,56 @@
  *       Even something like WordPress could be utilized - use it's AJAX framewok
  */
 
+ export var slides = [
+     {
+         imagePath: 'images/slider/ed24d275928f41d98abfd91e5757853a.jpeg',
+         header: 'REINVENTING DATA <br /> ANALYTICS TECHNOLOGIES',
+         button: {
+             text: 'Explore our Business',
+         }
+     },
+     {
+         imagePath: 'images/slider/f36f0b2a51ec2e2b6ad7147fe64bf51b.jpeg',
+         header: 'Global expierience <br /> in DDoS protection',
+         button: {
+             link: 'https://dataspace.pl/anty-ddos/',
+             text: 'Go to Anti DDoS',
+         }
+     },
+     {
+         imagePath: 'images/slider/aece7884b08fde9586c9cad3bb96ef8a.jpeg',
+         header: 'Big Data <br /> for financial markets',
+         button: {
+             link: 'http://turbineanalytics.com/en/',
+             text: 'Go to TURBINE',
+         }
+     },
+     {
+         imagePath: 'images/slider/a646ea1e8866a7779efd90a73e999b1f.jpeg',
+         header: 'Source of Bitcoin liquidity <br/> built with a robust technology',
+         button: {
+             link: 'http://www.bazaarbt.com/',
+             text: 'Go to BAZAAR',
+         }
+     },
+     {
+         imagePath: 'images/slider/d279c4b67bc7b268005c7fbd5e0752db.jpeg',
+         header: 'Cutting-edge droneware<br />technologies',
+         button: {
+             link: 'http://airbot.io/',
+             text: 'Go to AIRBOT',
+         }
+     },
+     {
+         imagePath: 'images/slider/f8cb2ff61df9b82055094d567bc54e15.jpeg',
+         header: 'AT THE FOREFRONT <br /> OF BIG DATA REVOLUTION',
+         button: {
+             link: 'http://numerix.pl/',
+             text: 'Go to NUMERIX',
+         }
+     }
+ ]
+
 export var featured = {
     messages: [
         {
