@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router";
 
 import Featured from "./index/Featured";
+import CookieConsent from "./index/CookieConsent";
 
 // by exporting this class we can require it in client.js
 // https://developer.mozilla.org/en/docs/web/javascript/reference/statements/export#Using_the_default_export
@@ -189,18 +190,7 @@ export default class Index extends React.Component {
     </div>
 </div>
 <Featured />
-<div id="global-cookie-info">
-    <div id="global-cookie-info-text">
-        This site requires cookies for proper work. By continuing
-        to use this site you are agreeing to our cookies policy.
-        <a href="/cookies_policy" target="_blank">
-            <b>Go to cookies policy</b>
-        </a>.<br /><br />
-        <span id="close-cookie-info" style={{ cursor: 'pointer', margin: 'auto' }}>
-            <b>Close it</b>
-        </span>
-    </div>
-</div>
+<CookieConsent />
 </div>
 		);
 	}
