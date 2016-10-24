@@ -21,6 +21,17 @@ export default class Breadcrumbs extends React.Component {
      *
      * The url must follow this pattern:
      * http://domain.name/path/to-a-very/long/article
+     *
+     *
+     * TODO: Change the way that name is generated in case of urls that allow
+     *       the use of the slug. Currently it will generate names like the
+     *       example below:
+     *
+     *       Home / News / Awesome Article 2
+     *
+     *       It is possible because url path is directly being transformed into
+     *       breadcrumb name. To solve that we should use title property of the
+     *       article instead of the slug.
      */
     getArrayOfCrumbLinks(){
         // Storres current path passed down via attribute
