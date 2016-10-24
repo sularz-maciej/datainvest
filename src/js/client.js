@@ -1,4 +1,19 @@
-// Utilising ES6 features that will be transpiled down by babel
+/**
+ * NOTE: In this project I am using ES6 features that are transpiled down by
+ *       babel.
+ *
+ * TODO: 1. Modularize the site - especially the pages and extract the content
+ *          from the components.
+ *       2. DRY up the cpde a bit - come up helpers/utilities classes and
+ *          exctract code duplication. It's not too bad though!
+ *       3. Attach to a backend.
+ *
+ * DISCLAIMER: This project is for practice purposes only. I am not affiliated
+ *             with the Data Invest Sp. z o.o. S.K.A. in any way, shape or form.
+ *
+ *             Likewise this is my first ever React.js app and some approaches
+ *             might not be optimal.
+ */
 
 /**
  * Modules - Value Export/Import
